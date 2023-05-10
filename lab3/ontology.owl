@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15/"
+     xml:base="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15">
+        <rdfs:label>БУТИК ШАУРМЫ</rdfs:label>
+        <rdfs:comment>Онтология шаурмички м. Новокосино</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Жарит -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Жарит">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кура_гриль"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Шаурма"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Шаурмичник"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#готовит"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#выпекает -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#выпекает">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Беляш"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Лаваш"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Лепешка"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Пекарь"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Эчпочмак"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#готовит"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#выпекает_с_помощью -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#выпекает_с_помощью">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Пекарь"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Тандыр"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#готовит -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#готовит">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#жарит_с_помощью -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#жарит_с_помощью">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Гриль_для_куриц"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Гриль_для_шаурмы"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Шаурмичник"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#обслуживает -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#обслуживает">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кассир"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Покупатель"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#обслуживает_с_помощью -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#обслуживает_с_помощью">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Касса"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кассир"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#руководит -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#руководит">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Администратор"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Директор"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#состоит_из -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#состоит_из">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Курица"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Тесто"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Шаурма"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Эчпочмак"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#управляет -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#управляет">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Администратор"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кассир"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Пекарь"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Посудомойщик"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Шаурмичник"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#руководит"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Администратор -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Администратор">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Персонал"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Беляш -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Беляш">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Меню"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Гриль_для_куриц -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Гриль_для_куриц">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Оборудование"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Гриль_для_шаурмы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Гриль_для_шаурмы">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Оборудование"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Директор -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Директор">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Персонал"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Ингредиент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Ингредиент"/>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Касса -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Касса">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Оборудование"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кассир -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кассир">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Персонал"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Клиент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Клиент"/>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кока_кола -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кока_кола">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Меню"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кура_гриль -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Кура_гриль">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Меню"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Курица -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Курица">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Ингредиент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Лаваш -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Лаваш">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Меню"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Лепешка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Лепешка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Меню"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Меню -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Меню"/>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Оборудование -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Оборудование"/>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Пекарь -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Пекарь">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Персонал"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Персонал -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Персонал"/>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Покупатель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Покупатель">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Клиент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Посудомойщик -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Посудомойщик">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Персонал"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Свинина -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Свинина">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Ингредиент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Тандыр -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Тандыр">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Оборудование"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Тесто -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Тесто">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Ингредиент"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Шаурма -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Шаурма">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Меню"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Шаурмичник -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Шаурмичник">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Персонал"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Эчпочмак -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Эчпочмак">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelina/ontologies/2023/4/untitled-ontology-15#Меню"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
